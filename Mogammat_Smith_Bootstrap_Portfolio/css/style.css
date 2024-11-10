@@ -1,0 +1,239 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  .navbar {
+    background-color: #fff;
+    padding: 1rem 2rem;
+  }
+
+  .navbar i{
+    color: #007bff;
+  }
+/* Banner Styling */
+.banner {
+  background: url(/images/back2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    padding: 20px;
+    
+}
+
+/* Profile Picture */
+.profile-pic img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    
+}
+
+/* Text Content */
+.text-content {
+    color: #ffffff;
+   
+}
+
+.text-content h1 {
+    font-size: 3.5rem;
+    color: #ffffff; 
+    
+}
+
+.text-content p {
+    font-size: 1.7rem;
+    margin: 10px 0;
+    color: #ffffff;
+   
+}
+
+.cta-button {
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .banner-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic img {
+        margin: 0 0 20px 0;
+    }
+
+    .text-content h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-pic img {
+        margin-top: -100px;
+        width: 250px;
+        height: 250px;
+    }
+
+
+    .text-content h1{
+      font-size: 2rem;
+    }
+
+    .text-content p {
+        font-size: 1.4rem;
+    }
+
+    .cta-button {
+        font-size: 1.2rem;
+        padding: 8px 16px;
+    }
+}
+
+ /* Timeline */
+ .timeline {
+  position: relative;
+  padding: 1rem 0;
+}
+
+/* Vertical blue bar on the left */
+.timeline-bar {
+  position: absolute;
+  left: 1.25rem;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #0d6efd;
+  z-index: 1;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 2.5rem;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+  height: 100%;
+  width: 2px;
+  background: #e0e0e0;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.timeline-content {
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.progress-bar {
+  transition: width 2s ease-in-out;
+}
+
+.card h5{
+  font-weight: 700;
+}
+
+.card{
+  background: linear-gradient(to bottom left, #77adec 40%, #5389ed 100%);
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #ffffff;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.btn-primary{
+
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  transition: 0.4s ease;
+}
+
+.card img{
+  height: 200px;
+}
+
+footer{
+  background: url(/images/back2.jpg);
+  background-position: center;
+}
+
+footer a {
+  transition: color 0.3s ease;
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover{
+  color: #3067a7;
+}
+
+i .bi, .bi-linkedin:hover{
+  color: #5389ed;
+}
+
+i .bi, .bi-github:hover{
+  color: rgb(107, 107, 107);
+}
+
+
